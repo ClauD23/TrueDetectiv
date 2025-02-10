@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detectivul Ioana - Cazul Crimei</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .login-box {
+            margin-top: 150px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+        h2 {
+            color: #ff5722;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input[type="password"] {
+            padding: 12px;
+            margin-top: 20px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-size: 18px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff3d00;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff5722;
+        }
+        .content {
+            display: none;
+            background-color: #222;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Cine este criminalul?</h2>
+        <input type="password" id="password" placeholder="Introdu parola..." />
+        <br>
+        <button onclick="checkPassword()">Accesează</button>
+    </div>
+
+    <div class="content" id="crime-story">
+        <h3>Rezolvarea Crimei</h3>
+        <p>
+            Totul a început cu un trecut murdar, ascuns sub măști de prietenie. În 2022, Ana și Ioana s-au întâlnit într-un context care le-a marcat viețile pentru totdeauna. Ana, devastată de pierderea familiei, s-a refugiat în droguri, iar Ioana, cunoscută în cercuri umbrite drept "Yonne", i-a fost atât dealer, cât și prietenă. Era o relație bazată pe fragilitate și dependență, care s-a destrămat când Ana a încercat să scape de demonii ei, alegând calea dezintoxicării.
+        </p>
+        <p>
+            Ani mai târziu, Ioana și Ana s-au regăsit, dar nu din dorință proprie. Alex, iubitul Anei, și Cristi, partenerul Ioanei, erau prieteni buni, așa că o excursie la cabană părea o idee inofensivă. În realitate, tensiunea dintre cele două femei fierbea în tăcere. Ana descoperise că Ioana nu renunțase la afacerea cu droguri. O văzuse cu ochii ei, într-o întâlnire discretă cu un client. Ana a decis să-i scrie lui Cristi că ar dori să vorbească.
+        </p>
+        <p>
+            Ioana a aflat, pentru că a văzut mesajele, și a înțeles că este în pericol. Din frica de a nu fi descoperită, la cabană, în noaptea crimei, Ioana a pus în mișcare un plan.
+        </p>
+        <p>
+            La ora 23:45, o pană de curent neașteptată, care a înghițit în întuneric cabana, a avantajat planurile Ioanei. Sub pretextul unei invitații la vin, Ioana l-a chemat pe Cristi în camera ei. Acolo, cu un gest calculat, i-a strecurat somnifere în pahar. Cristi a adormit rapid, iar Ioana i-a luat arma de serviciu.
+        </p>
+        <p>
+            În liniștea nopții, Ioana a plecat spre lac, știind că Ana era acolo. Ce a urmat a fost o confruntare alimentată de ură și frică. Pașii Ioanei, și țipetele Anei, au fost ultimele sunete înainte de un foc de armă care a sfâșiat liniștea. Ana a căzut la pământ, iar Ioana s-a grăbit să ascundă urmele crimei.
+        </p>
+        <p>
+            S-a întors la cabană la 00:43, aruncând arma și bocancii în pădure, crezând că nimeni nu o va bănui. Dar adevărul a început să iasă la iveală. Un raport toxicologic care arăta somnifere în sângele lui Cristi, mesajele de amenințare trimise Anei, amprentele de pe arma găsită, dar și multe altele, au dus la vinovăția femeii.
+        </p>
+        <p>
+            Ioana a fost prinsă în propria plasă. Tot ceea ce încercase să ascundă a devenit vizibil, iar crima ei a fost descoperită.
+        </p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            if (password === 'Ioana') {
+                document.getElementById('crime-story').style.display = 'block';
+            } else {
+                alert("Parola incorectă!");
+            }
+        }
+    </script>
+</body>
+</html>
